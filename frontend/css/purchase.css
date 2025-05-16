@@ -1,0 +1,17 @@
+.input-field {
+  @apply w-full mt-1 rounded-md border border-gray-300 dark:border-gray-600 p-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white;
+}
+
+.input-disabled {
+  @apply w-full mt-1 rounded-md border border-gray-300 dark:border-gray-600 p-2 bg-gray-100 dark:bg-gray-600 text-gray-900 dark:text-white;
+}
+
+/* Scrollbar hidden */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

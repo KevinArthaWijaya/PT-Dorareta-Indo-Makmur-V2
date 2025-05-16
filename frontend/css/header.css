@@ -1,0 +1,46 @@
+/*  ANIMASI ROTASI GEAR */
+@keyframes rotate-once {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-once {
+  animation: rotate-once 0.5s linear 1;
+}
+
+/*  ANIMASI HAMBURGER MENU */
+/* Garis Hamburger */
+.hamburger-line {
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Saat hamburger dibuka (jadi X) */
+#hamburgerBtn.open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#hamburgerBtn.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburgerBtn.open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Animasi rotasi dengan smooth */
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+/* Saat dropdown aktif, panah di rotate 180 derajat */
+#masterDataToggle.open #chevronDownLight,
+#masterDataToggle.open #chevronDownDark {
+  transform: rotate(180deg);
+}
