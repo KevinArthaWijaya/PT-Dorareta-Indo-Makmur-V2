@@ -29,14 +29,26 @@ if (!isset($_SESSION['username']) || !in_array($_SESSION['role'], $allowed_roles
   <?php include '../partials/header.php'; ?>
 
   <main class="px-4 pt-28 pb-10 sm:px-6 lg:px-8">
-    <!-- HEADER -->
-    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 mb-5">
-      <h2 class="text-2xl font-semibold">Category Management</h2>
-      <button id="openCreateCategory"
-        class="bg-red-600 hover:bg-red-700 text-white font-medium text-sm px-4 py-2 rounded-md shadow transition">
-        Create Category
-      </button>
+    <!-- PAGE HEADER -->
+    <div class="w-full">
+  <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 mb-5">
+    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Category Management</h2>
+    <div class="text-sm text-gray-500 dark:text-gray-300">
+      <a href="../dashboard/dashboard.php" class="text-gray-600 dark:text-gray-200 font-medium hover:underline">Dashboard</a>
+      <span class="mx-1">/</span>
+      <span class="text-red-600 font-semibold">Category Management</span>
     </div>
+  </div>
+  <hr class="border-t border-gray-200 dark:border-gray-700 mb-8" />
+</div>
+
+<!-- CREATE BUTTON -->
+<div class="mb-4 flex justify-end">
+  <button id="openCreateCategory"
+    class="bg-red-600 hover:bg-red-700 text-white font-medium text-sm px-4 py-2 rounded-md shadow transition">
+    Create Category
+  </button>
+</div>
 
     <!-- TABLE -->
     <div class="bg-white dark:bg-gray-800 shadow rounded-lg overflow-x-auto">
@@ -44,7 +56,7 @@ if (!isset($_SESSION['username']) || !in_array($_SESSION['role'], $allowed_roles
         <thead class="bg-gray-100 dark:bg-gray-700 text-xs font-semibold text-gray-600 dark:text-gray-300 uppercase tracking-wider">
           <tr>
             <th class="px-4 py-3 text-left">No</th>
-            <th class="px-4 py-3 text-left">Category Name</th>
+            <th class="px-5 py-3 text-left">Category Name</th>
             <th class="px-4 py-3 text-left">Prefix SKU</th>
             <th class="px-4 py-3 text-left">Actions</th>
           </tr>

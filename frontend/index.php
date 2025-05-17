@@ -1,13 +1,11 @@
 <?php
+// Anti cache
+header("Cache-Control: no-cache, must-revalidate");
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+
 session_start();
 
-// Jika user sudah login, arahkan ke dashboard
-if (isset($_SESSION['username'])) {
-    header("Location: dashboard.php");
-    exit();
-}
-
-// Jika belum login, arahkan ke halaman login
+// Langsung arahkan ke halaman login tanpa cek sesi
 header("Location: auth/login.php");
 exit();
 ?>

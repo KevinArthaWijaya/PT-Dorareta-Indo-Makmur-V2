@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function fetchAndRenderSaless() {
     try {
       const url = new URL(
-        "/perubahan/backend/api/sales/index.php",
+        "/PT-Dorareta-Indo-Makmur/backend/api/sales/index.php",
         window.location.origin
       );
 

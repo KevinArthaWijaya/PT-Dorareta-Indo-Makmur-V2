@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
             : "bg-green-100 text-green-700";
 
         const imagePath = product.product_image?.startsWith("uploads/")
-          ? `${location.origin}/perubahan/backend/${product.product_image}`
-          : `${location.origin}/perubahan/assets/image/default_product.png`;
+          ? `${location.origin}/PT-Dorareta-Indo-Makmur/backend/${product.product_image}`
+          : `${location.origin}/PT-Dorareta-Indo-Makmur/assets/image/default_product.png`;
 
         row.innerHTML = `
           <td class="px-4 py-2"><img src="${imagePath}" alt="Product" class="w-10 h-10 object-cover rounded" /></td>
@@ -506,8 +506,8 @@ document.addEventListener("DOMContentLoaded", () => {
           : "bg-green-100 text-green-700";
 
       const imagePath = product.product_image?.startsWith("uploads/")
-        ? `${location.origin}/perubahan/backend/${product.product_image}`
-        : `${location.origin}/perubahan/assets/image/default_product.png`;
+        ? `${location.origin}/PT-Dorareta-Indo-Makmur/backend/${product.product_image}`
+        : `${location.origin}/PT-Dorareta-Indo-Makmur/assets/image/default_product.png`;
 
       row.innerHTML = `
         <td class="px-4 py-2"><img src="${imagePath}" class="w-10 h-10 object-cover rounded" /></td>
@@ -924,8 +924,8 @@ document.addEventListener("DOMContentLoaded", () => {
           : "bg-green-100 text-green-700";
 
       const imagePath = product.product_image?.startsWith("uploads/")
-        ? `${location.origin}/perubahan/backend/${product.product_image}`
-        : `${location.origin}/perubahan/assets/image/default_product.png`;
+        ? `${location.origin}/PT-Dorareta-Indo-Makmur/backend/${product.product_image}`
+        : `${location.origin}/PT-Dorareta-Indo-Makmur/assets/image/default_product.png`;
 
       row.innerHTML = `
       <td class="px-4 py-2"><img src="${imagePath}" alt="Product" class="w-10 h-10 object-cover rounded" /></td>
@@ -984,8 +984,8 @@ document.addEventListener("DOMContentLoaded", () => {
           : "bg-green-100 text-green-700";
 
       const imagePath = product.product_image?.startsWith("uploads/")
-        ? `${location.origin}/perubahan/backend/${product.product_image}`
-        : `${location.origin}/perubahan/assets/image/default_product.png`;
+        ? `${location.origin}/PT-Dorareta-Indo-Makmur/backend/${product.product_image}`
+        : `${location.origin}/PT-Dorareta-Indo-Makmur/assets/image/default_product.png`;
 
       row.innerHTML = `
       <td class="px-4 py-2"><img src="${imagePath}" class="w-10 h-10 object-cover rounded" /></td>

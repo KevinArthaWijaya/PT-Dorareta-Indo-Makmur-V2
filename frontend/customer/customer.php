@@ -27,7 +27,7 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'Admin') {
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
   <?php include '../partials/header.php'; ?>
 
-  <main class="px-4 pt-28 pb-10 sm:px-6 lg:px-8">
+  <main class="px-4 pt-20 pb-10 sm:px-6 lg:px-8">
     <!-- PAGE HEADER -->
     <div class="w-full">
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 mb-5">

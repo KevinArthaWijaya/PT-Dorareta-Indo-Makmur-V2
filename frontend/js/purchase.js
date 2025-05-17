@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function fetchAndRenderPurchases() {
     try {
       const url = new URL(
-        "/perubahan/backend/api/purchase/index.php",
+        "/PT-Dorareta-Indo-Makmur/backend/api/purchase/index.php",
         window.location.origin
       );
       url.searchParams.set("path", "purchase");

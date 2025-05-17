@@ -39,7 +39,7 @@ if ($result && $result->num_rows === 1) {
         $_SESSION['username'] = $user['username'];
         $_SESSION['full_name'] = $user['first_name'] . ' ' . $user['last_name'];
         $_SESSION['role'] = $user['role_name'];
-        $_SESSION['profile_image'] = !empty($user['profile_image']) ? $user['profile_image'] : '/perubahan/assets/image/default-user-lightmode.png';
+        $_SESSION['profile_image'] = !empty($user['profile_image']) ? $user['profile_image'] : '/PT-Dorareta-Indo-Makmur/assets/image/default-user-lightmode.png';
         $_SESSION['permissions'] = getPermissionsByRole($user['role_name']); // 🎯 Set permission di session
         
         // ✅ RESPON JSON
@@ -66,7 +66,7 @@ $conn->close();
 // 🔵 FUNCTION-FUNCTION TAMBAHAN
 
 function determineRedirect() {
-    return '/perubahan/frontend/dashboard/dashboard.php';
+    return '/PT-Dorareta-Indo-Makmur/frontend/dashboard/dashboard.php';
 }
 
 function getPermissionsByRole($roleName) {
